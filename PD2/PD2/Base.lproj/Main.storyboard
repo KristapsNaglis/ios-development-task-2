@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PD2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_iphone11.png" translatesAutoresizingMaskIntoConstraints="NO" id="WC8-7p-h6Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ievadiet pārbaudāmā laika parametrus:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-L5-c1B">
+                                <rect key="frame" x="0.0" y="144" width="414" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9mT-r5-dLt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9mT-r5-dLt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A75-ZZ-I1U">
+                                <rect key="frame" x="47" y="182" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-978296399.91561902">
+                                    <!--1970-01-01 03:00:00 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978296400">
+                                    <!--1970-01-01 03:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="-978231600">
+                                    <!--1970-01-01 21:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="lv"/>
+                            </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="traffic_light_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="MTk-S7-Xvj">
+                                <rect key="frame" x="0.0" y="463" width="414" height="433"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yeg-L5-c1B" secondAttribute="trailing" id="2EX-Ir-0sc"/>
+                            <constraint firstItem="yeg-L5-c1B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Pj-Fg-VDJ"/>
+                            <constraint firstItem="A75-ZZ-I1U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="7qV-F8-jvM"/>
+                            <constraint firstItem="WC8-7p-h6Y" firstAttribute="leading" secondItem="yeg-L5-c1B" secondAttribute="leading" id="8p8-32-jIJ"/>
+                            <constraint firstItem="WC8-7p-h6Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F7z-RE-SJ2"/>
+                            <constraint firstItem="MTk-S7-Xvj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IFW-pm-0NQ"/>
+                            <constraint firstItem="MTk-S7-Xvj" firstAttribute="top" secondItem="WC8-7p-h6Y" secondAttribute="bottom" constant="-448" id="UBm-Bn-BIP"/>
+                            <constraint firstItem="A75-ZZ-I1U" firstAttribute="top" secondItem="yeg-L5-c1B" secondAttribute="bottom" constant="20" id="fc8-kL-QKY"/>
+                            <constraint firstItem="WC8-7p-h6Y" firstAttribute="trailing" secondItem="yeg-L5-c1B" secondAttribute="trailing" id="h0B-YS-yfS"/>
+                            <constraint firstItem="MTk-S7-Xvj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jAx-nk-jOI"/>
+                            <constraint firstItem="WC8-7p-h6Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="jIf-2W-LDq"/>
+                            <constraint firstItem="MTk-S7-Xvj" firstAttribute="bottom" secondItem="WC8-7p-h6Y" secondAttribute="bottom" id="ki9-Da-RJ6"/>
+                            <constraint firstItem="yeg-L5-c1B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pyo-a5-9zU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A75-ZZ-I1U" secondAttribute="trailing" constant="47" id="vwM-Yx-JiW"/>
+                            <constraint firstItem="MTk-S7-Xvj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="A75-ZZ-I1U" secondAttribute="bottom" constant="65" id="x36-og-7Yv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UBm-Bn-BIP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mainHeading" destination="yeg-L5-c1B" id="Kt0-VG-QdM"/>
+                        <outlet property="trafficLight" destination="MTk-S7-Xvj" id="dgB-mz-dyD"/>
+                        <outlet property="trafficLightTimePicker" destination="A75-ZZ-I1U" id="GGs-4z-kUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_iphone11.png" width="198.72000122070312" height="430.07998657226562"/>
+        <image name="traffic_light_off.png" width="981" height="1024"/>
+    </resources>
+</document>
